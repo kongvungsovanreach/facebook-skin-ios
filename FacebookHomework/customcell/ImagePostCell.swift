@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextPostCell: UITableViewCell {
+class ImagePostCell: UITableViewCell {
     @IBOutlet weak var profilePictureImageView: UIImageView!
     @IBOutlet weak var profileNameLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
@@ -18,6 +18,7 @@ class TextPostCell: UITableViewCell {
     @IBOutlet weak var postTextLabel: UILabel!
 
     @IBOutlet weak var reactionAmountLabel: UILabel!
+    @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var commentShareLabel: UILabel!
     @IBOutlet weak var commentTextField: UITextField!
     override func awakeFromNib() {
@@ -26,8 +27,6 @@ class TextPostCell: UITableViewCell {
         profilePictureImageView.layer.masksToBounds = true
         commentTextField.layer.masksToBounds = true
         commentTextField.layer.cornerRadius = 12.0
-//        commentTextField.layer.borderWidth = 2.0r
-//        commentTextField.back
 
         
         let mScreenSize = UIScreen.main.bounds

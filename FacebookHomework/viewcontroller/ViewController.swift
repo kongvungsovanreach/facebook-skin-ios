@@ -9,36 +9,62 @@
 import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var postTableView: UITableView!
-    
     @IBOutlet weak var bottomTabbar: UITabBar!
-    override func viewWillAppear(_ animated: Bool) {
-
-    }
+    let posts : [FacebookPost] = PostSampleData.posts
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        postTableView.separatorStyle = 
-        postTableView.dataSource = self
-        postTableView.delegate = self
-        postTableView.register(UINib(nibName: "TextPostCell", bundle: nil), forCellReuseIdentifier: "TextPostReusableCell")
-//
-        postTableView.rowHeight = UITableView.automaticDimension
-        postTableView.estimatedRowHeight = UITableView.automaticDimension
+        tableConfig(postTableView)
     }
 
+    func tableConfig(_ table : UITableView) {
+        table.dataSource = self
+        table.delegate = self
+        table.register(UINib(nibName: "TextPostCell", bundle: nil), forCellReuseIdentifier: "TextPostReusableCell")
+        table.register(UINib(nibName: "ImagePostCell", bundle: nil), forCellReuseIdentifier: "ImagePostReusableCell")
+        table.allowsSelection = false
+        table.showsVerticalScrollIndicator = false
+    }
 
+    func textCellConfig(_ cell : TextPostCell, _ row : Int) {
+        cell.profilePictureImageView.image = posts[row].profilePicture
+        cell.profileNameLabel.text = posts[row].profileName
+        cell.postDateLabel.text = posts[row].postDate
+        cell.locationLabel.text = posts[row].location
+        cell.postTextLabel.text = posts[row].postText
+        cell.reactionAmountLabel.text = "\(String(describing: posts[row].reactionAmount!))"
+        cell.commentShareLabel.text = "\(String(describing: posts[row].commentAmount!)) Comment \(String(describing: posts[row].shareAmount!)) Share"
+    }
+    func imageCellConfig(_ cell : ImagePostCell, _ row : Int) {
+        cell.profilePictureImageView.image = posts[row].profilePicture
+        cell.profileNameLabel.text = posts[row].profileName
+        cell.postDateLabel.text = posts[row].postDate
+        cell.locationLabel.text = posts[row].location
+        cell.postTextLabel.text = posts[row].postText
+        cell.photo.image = posts[row].photo
+        cell.reactionAmountLabel.text = "\(String(describing: posts[row].reactionAmount!))"
+        cell.commentShareLabel.text = "\(String(describing: posts[row].commentAmount!)) Comment \(String(describing: posts[row].shareAmount!)) Share"
+    }
 }
 
 
 
 extension ViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return posts.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let reusableCell = tableView.dequeueReusableCell(withIdentifier: "TextPostReusableCell", for: indexPath) as! TextPostCell
-        return reusableCell
+        if posts[indexPath.row].isTextPost {
+            let reusableCell = tableView.dequeueReusableCell(withIdentifier: "TextPostReusableCell", for: indexPath) as! TextPostCell
+            textCellConfig(reusableCell, indexPath.row)
+            return reusableCell
+        }else{
+            let reusableCell = tableView.dequeueReusableCell(withIdentifier: "ImagePostReusableCell", for: indexPath) as! ImagePostCell
+            imageCellConfig(reusableCell, indexPath.row)
+            return reusableCell
+        }
+
     }
 }
 extension ViewController : UITableViewDelegate {

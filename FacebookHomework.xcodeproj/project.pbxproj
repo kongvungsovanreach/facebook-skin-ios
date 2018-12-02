@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60256D4921B4192600C1F9DD /* FacebookPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60256D4821B4192600C1F9DD /* FacebookPost.swift */; };
+		60256D4D21B41A7400C1F9DD /* PostSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60256D4C21B41A7400C1F9DD /* PostSampleData.swift */; };
+		60256D5421B4301500C1F9DD /* ImagePostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60256D5221B4301500C1F9DD /* ImagePostCell.xib */; };
+		60256D5521B4301500C1F9DD /* ImagePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60256D5321B4301500C1F9DD /* ImagePostCell.swift */; };
 		60734A7B21B153F700264956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60734A7A21B153F700264956 /* AppDelegate.swift */; };
 		60734A7D21B153F700264956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60734A7C21B153F700264956 /* ViewController.swift */; };
 		60734A8021B153F700264956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60734A7E21B153F700264956 /* Main.storyboard */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60256D4821B4192600C1F9DD /* FacebookPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookPost.swift; sourceTree = "<group>"; };
+		60256D4C21B41A7400C1F9DD /* PostSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSampleData.swift; sourceTree = "<group>"; };
+		60256D5221B4301500C1F9DD /* ImagePostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagePostCell.xib; sourceTree = "<group>"; };
+		60256D5321B4301500C1F9DD /* ImagePostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePostCell.swift; sourceTree = "<group>"; };
 		60734A7721B153F700264956 /* FacebookHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60734A7A21B153F700264956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60734A7C21B153F700264956 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +79,8 @@
 		60734A8C21B1FCA500264956 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				60256D4821B4192600C1F9DD /* FacebookPost.swift */,
+				60256D4C21B41A7400C1F9DD /* PostSampleData.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -104,6 +114,8 @@
 		60734A9021B1FD1500264956 /* customcell */ = {
 			isa = PBXGroup;
 			children = (
+				60256D5321B4301500C1F9DD /* ImagePostCell.swift */,
+				60256D5221B4301500C1F9DD /* ImagePostCell.xib */,
 				60734A9521B1FD6D00264956 /* TextPostCell.swift */,
 				60734A9621B1FD6D00264956 /* TextPostCell.xib */,
 			);
@@ -169,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60734A9821B1FD6D00264956 /* TextPostCell.xib in Resources */,
+				60256D5421B4301500C1F9DD /* ImagePostCell.xib in Resources */,
 				60734A8521B153F800264956 /* LaunchScreen.storyboard in Resources */,
 				60734A8221B153F800264956 /* Assets.xcassets in Resources */,
 				60734A8021B153F700264956 /* Main.storyboard in Resources */,
@@ -182,7 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60256D4D21B41A7400C1F9DD /* PostSampleData.swift in Sources */,
 				60734A9721B1FD6D00264956 /* TextPostCell.swift in Sources */,
+				60256D4921B4192600C1F9DD /* FacebookPost.swift in Sources */,
+				60256D5521B4301500C1F9DD /* ImagePostCell.swift in Sources */,
 				60734A7D21B153F700264956 /* ViewController.swift in Sources */,
 				60734A7B21B153F700264956 /* AppDelegate.swift in Sources */,
 			);
