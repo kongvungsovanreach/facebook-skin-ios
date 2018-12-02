@@ -14,8 +14,6 @@
 		60734A8521B153F800264956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60734A8321B153F800264956 /* LaunchScreen.storyboard */; };
 		60734A9721B1FD6D00264956 /* TextPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60734A9521B1FD6D00264956 /* TextPostCell.swift */; };
 		60734A9821B1FD6D00264956 /* TextPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60734A9621B1FD6D00264956 /* TextPostCell.xib */; };
-		60734A9B21B1FD8900264956 /* PhotoPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60734A9921B1FD8900264956 /* PhotoPostCell.swift */; };
-		60734A9C21B1FD8900264956 /* PhotoPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60734A9A21B1FD8900264956 /* PhotoPostCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +26,6 @@
 		60734A8621B153F800264956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60734A9521B1FD6D00264956 /* TextPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPostCell.swift; sourceTree = "<group>"; };
 		60734A9621B1FD6D00264956 /* TextPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextPostCell.xib; sourceTree = "<group>"; };
-		60734A9921B1FD8900264956 /* PhotoPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPostCell.swift; sourceTree = "<group>"; };
-		60734A9A21B1FD8900264956 /* PhotoPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoPostCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +106,6 @@
 			children = (
 				60734A9521B1FD6D00264956 /* TextPostCell.swift */,
 				60734A9621B1FD6D00264956 /* TextPostCell.xib */,
-				60734A9921B1FD8900264956 /* PhotoPostCell.swift */,
-				60734A9A21B1FD8900264956 /* PhotoPostCell.xib */,
 			);
 			path = customcell;
 			sourceTree = "<group>";
@@ -177,7 +171,6 @@
 				60734A9821B1FD6D00264956 /* TextPostCell.xib in Resources */,
 				60734A8521B153F800264956 /* LaunchScreen.storyboard in Resources */,
 				60734A8221B153F800264956 /* Assets.xcassets in Resources */,
-				60734A9C21B1FD8900264956 /* PhotoPostCell.xib in Resources */,
 				60734A8021B153F700264956 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,7 +184,6 @@
 			files = (
 				60734A9721B1FD6D00264956 /* TextPostCell.swift in Sources */,
 				60734A7D21B153F700264956 /* ViewController.swift in Sources */,
-				60734A9B21B1FD8900264956 /* PhotoPostCell.swift in Sources */,
 				60734A7B21B153F700264956 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

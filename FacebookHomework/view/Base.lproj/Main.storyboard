@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M4R-mo-LVn">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4R-mo-LVn">
+                                <rect key="frame" x="0.0" y="813" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem badgeValue="5" systemItem="favorites" id="9U3-ax-v2p"/>
@@ -30,18 +29,43 @@
                                     <tabBarItem systemItem="more" id="aEB-th-vCS"/>
                                 </items>
                             </tabBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nWE-M6-lfq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextPostReusableCell" id="lgz-rm-W9Q" customClass="TextPostCell" customModule="FacebookHomework">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lgz-rm-W9Q" id="xPw-IZ-X30">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nWE-M6-lfq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3kZ-uh-ii6"/>
+                            <constraint firstItem="M4R-mo-LVn" firstAttribute="trailing" secondItem="nWE-M6-lfq" secondAttribute="trailing" id="65f-ao-4DG"/>
+                            <constraint firstItem="nWE-M6-lfq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9MB-iQ-Xly"/>
+                            <constraint firstItem="M4R-mo-LVn" firstAttribute="top" secondItem="nWE-M6-lfq" secondAttribute="bottom" id="AYM-hr-8uV"/>
+                            <constraint firstAttribute="bottom" secondItem="M4R-mo-LVn" secondAttribute="bottom" id="V05-ty-dC7"/>
+                            <constraint firstItem="nWE-M6-lfq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VVb-EJ-AXW"/>
+                            <constraint firstItem="M4R-mo-LVn" firstAttribute="leading" secondItem="nWE-M6-lfq" secondAttribute="leading" id="bzX-E1-2m7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Facebook" id="aQ4-NT-20V"/>
                     <connections>
                         <outlet property="bottomTabbar" destination="M4R-mo-LVn" id="9c3-LI-eDF"/>
+                        <outlet property="postTableView" destination="nWE-M6-lfq" id="tlm-4t-j9S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="-564"/>
+            <point key="canvasLocation" x="769.56521739130437" y="-564.50892857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="99Z-1J-3kP">
@@ -59,7 +83,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXf-LY-gpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104.8" y="-564.46776611694156"/>
+            <point key="canvasLocation" x="-164" y="-565"/>
         </scene>
     </scenes>
 </document>
