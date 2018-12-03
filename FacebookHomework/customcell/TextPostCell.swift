@@ -26,16 +26,6 @@ class TextPostCell: UITableViewCell {
         profilePictureImageView.layer.masksToBounds = true
         commentTextField.layer.masksToBounds = true
         commentTextField.layer.cornerRadius = 12.0
-//        commentTextField.layer.borderWidth = 2.0r
-//        commentTextField.back
-
-        
-        let mScreenSize = UIScreen.main.bounds
-        let mSeparatorHeight = CGFloat(9.0) // Change height of speatator as you want
-        let mAddSeparator = UIView.init(frame: CGRect(x: 0, y: self.frame.size.height - mSeparatorHeight, width: mScreenSize.width, height: mSeparatorHeight))
-        mAddSeparator.backgroundColor = UIColor(displayP3Red: 192/255, green: 192/255, blue: 192/255, alpha: 1) // Change backgroundColor of separator
-        self.addSubview(mAddSeparator)
-//         Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

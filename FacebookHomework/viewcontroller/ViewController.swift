@@ -34,6 +34,9 @@ class ViewController: UIViewController {
         cell.postTextLabel.text = posts[row].postText
         cell.reactionAmountLabel.text = "\(String(describing: posts[row].reactionAmount!))"
         cell.commentShareLabel.text = "\(String(describing: posts[row].commentAmount!)) Comment \(String(describing: posts[row].shareAmount!)) Share"
+        if posts[row].postText.count < 50 {
+            cell.postTextLabel.font = cell.postTextLabel.font.withSize(30.0)
+        }
     }
     func imageCellConfig(_ cell : ImagePostCell, _ row : Int) {
         cell.profilePictureImageView.image = posts[row].profilePicture
@@ -44,6 +47,9 @@ class ViewController: UIViewController {
         cell.photo.image = posts[row].photo
         cell.reactionAmountLabel.text = "\(String(describing: posts[row].reactionAmount!))"
         cell.commentShareLabel.text = "\(String(describing: posts[row].commentAmount!)) Comment \(String(describing: posts[row].shareAmount!)) Share"
+        if posts[row].postText.count < 50 {
+            cell.postTextLabel.font = cell.postTextLabel.font.withSize(30.0)
+        }
     }
 }
 
