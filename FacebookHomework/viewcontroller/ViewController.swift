@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         cell.postTextLabel.text = posts[row].postText
         cell.reactionAmountLabel.text = "\(String(describing: posts[row].reactionAmount!))"
         cell.commentShareLabel.text = "\(String(describing: posts[row].commentAmount!)) Comment \(String(describing: posts[row].shareAmount!)) Share"
-        if posts[row].postText.count < 50 {
+        if posts[row].postText.count < 42 {
             cell.postTextLabel.font = cell.postTextLabel.font.withSize(30.0)
         }
     }
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         cell.photo.image = posts[row].photo
         cell.reactionAmountLabel.text = "\(String(describing: posts[row].reactionAmount!))"
         cell.commentShareLabel.text = "\(String(describing: posts[row].commentAmount!)) Comment \(String(describing: posts[row].shareAmount!)) Share"
-        if posts[row].postText.count < 50 {
+        if posts[row].postText.count < 42 {
             cell.postTextLabel.font = cell.postTextLabel.font.withSize(30.0)
         }
     }

@@ -136,12 +136,12 @@
             </objects>
             <point key="canvasLocation" x="-164" y="-565"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Facebook-->
         <scene sceneID="KJH-lq-apk">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XjP-rw-B2Z" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="GFk-vT-8nw"/>
+                    <navigationItem key="navigationItem" title="Facebook" id="GFk-vT-8nw"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zg8-36-9Zh">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
