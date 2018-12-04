@@ -238,6 +238,7 @@ You should add it to the UITableViewCell method awakeFromNib You should add it t
                             <constraint firstItem="eEy-tx-PDo" firstAttribute="top" secondItem="gMw-D3-MwA" secondAttribute="bottom" constant="8" id="lYl-DV-laM"/>
                             <constraint firstAttribute="bottom" secondItem="CQF-eh-5ec" secondAttribute="bottom" constant="32.5" id="oT0-gc-aaI"/>
                             <constraint firstItem="rki-W4-XyT" firstAttribute="leading" secondItem="2Eq-Ys-eXG" secondAttribute="leading" constant="16" id="rLc-bf-yra"/>
+                            <constraint firstItem="qwD-MK-UFc" firstAttribute="top" secondItem="mmz-a4-DN1" secondAttribute="bottom" constant="9.5" id="rMD-PE-IeM"/>
                             <constraint firstItem="HrN-UJ-KaM" firstAttribute="top" secondItem="mmz-a4-DN1" secondAttribute="bottom" id="stP-1T-Ycy">
                                 <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                             </constraint>
